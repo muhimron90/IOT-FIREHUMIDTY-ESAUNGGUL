@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/flatblack"
+
+    tools:context="com.example.chickenronz.iot.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:id="@+id/txt_m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-----"
+        android:textSize="16dp"
+        android:textColor="@color/textcolor"
+
+        app:layout_constraintLeft_toRightOf="@+id/textView6"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.202"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="41dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_hum" />
+
+    >
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FLAME STATUS"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:textColor="@color/textcolor"
+        android:id="@+id/textView6"
+
+        android:layout_marginLeft="62dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="42dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_hum" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Communication :"
+        android:textSize="12dp"
+        android:textColor="@color/textcolor"
+        android:layout_marginStart="26dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="26dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/txt_comm"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/txt_comm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" -----"
+        android:textSize="12dp"
+        android:textColor="@color/textcolor"
+        android:layout_marginStart="35dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40dp"
+        app:layout_constraintLeft_toRightOf="@+id/txt_comm"
+        android:layout_marginLeft="35dp" />
+
+    <TextView
+        android:id="@+id/txt_kel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="40dp"
+        android:text="------"
+        android:textColor="@color/textcolor"
+        android:textSize="12dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="142dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.706" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="149dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="33dp"
+        android:text="TEMPERATURE"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.412" />
+
+    <TextView
+        android:id="@+id/textViewh"
+        android:layout_width="76dp"
+        android:layout_height="20dp"
+        android:text="HUMIDITY"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginStart="133dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_temp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.184" />
+
+    <TextView
+        android:id="@+id/txt_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-----"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="13dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.406" />
+
+    <TextView
+        android:id="@+id/txt_hum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-----"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginEnd="79dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.703"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewh" />
+
+    <Switch
+        android:id="@+id/fan_sw"
+        android:layout_width="153dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="8dp"
+
+        android:checked="false"
+
+        android:switchMinWidth="100dp"
+        android:switchPadding="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:thumbTint="@color/colorAccent"
+        android:trackTint="@android:color/holo_green_light"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toLeftOf="@+id/gifImageView"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="0.721" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FAN SWITCH"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" /><![CDATA[
+
+
+
+
+
+
+    >
+
+
+
+
+
+
+
+
+
+
+]]>
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="76dp"
+        android:layout_height="64dp"
+        android:src="@drawable/fan"
+
+        android:id="@+id/gifImageView"
+        android:layout_marginTop="6dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        android:layout_marginRight="78dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="69dp"
+        android:layout_height="50dp"
+        android:src="@drawable/nofan"
+
+        android:id="@+id/nofan"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        android:layout_marginRight="82dp"
+        app:layout_constraintRight_toRightOf="parent" />
+</android.support.constraint.ConstraintLayout>
